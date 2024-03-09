@@ -52,10 +52,9 @@
 #         self.x = new_x
 #         self.y = new_y
 #     def dist(self, other_point):
-#         return sqrt((self.x - P2.x) ** 2 + (self.y - P2.y) ** 2)
-# P1 = Point()
-# P1.move(0, 0)
-# P2 = Point()
+#         return round(sqrt((self.x - P2.x) ** 2 + (self.y - P2.y) ** 2), 2)
+# P1 = Point(0, 0)
+# P2 = Point(0, 0)
 # P2.move(1, 1)
 # P1.show()
 # P2.show()
@@ -98,6 +97,6 @@
 #             return False
 #     return True
 
-# numbers = [2, 4, 6, 9, 11, 13, 17, 20]
+# numbers = [2, 3, 8, 9, 11, 13, 15, 17, 20]
 # primes = list(filter(lambda x: is_prime(x), numbers))
 # print("Prime numbers:", primes)
